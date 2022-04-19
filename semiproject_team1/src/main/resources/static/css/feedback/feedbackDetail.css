@@ -1,0 +1,686 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(../../asset/image/board/lol4.jpg);
+	background-size: cover; 
+}
+
+.btn_list {
+	border: 5px solid skyblue;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0);
+	font-weight: bold;
+	width: 120px;
+	height: 48px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.feedback_container{
+	display: flex;
+	flex-direction: column;
+	background: white;
+	width: 1000px;
+	/*height: 2500px;*/
+	border: 5px solid #4169E1;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 15px 20px;
+	border-radius: 30px;
+	margin-bottom: 20px;
+	outline: none;
+}
+
+/* 헤더부 */
+.feedback_container_header{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+
+.feedback_subject_container{
+    padding-left: 20px;
+	font-weight: bold;
+	font-size: 40px;
+	width: 980px;
+	height: 55px;
+	color: black;
+}
+
+/* 날짜 닉네임 조회수 댓글 추천 컨테이너*/
+.feedback_container_bo{
+	display: flex;
+	background-color: white;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 20px;
+	margin: 10px;
+}
+
+/* 왼쪽 : 날짜 닉네임 */
+.feedback_container_bo_left{
+	margin: 10px;
+	width: 650px;
+	height: 10px;
+	display: flex;
+	background-color: white;
+}
+/* 우측 : 조회수 댓글 추천*/
+.feedback_container_bo_right{
+	display: flex;
+	background-color: white;
+	margin: 10px;
+}
+
+.feedback_readcount_container{
+    margin: 5px;
+}
+
+/*리플레이*/
+.feedback_container_replay{
+	background-color: white;
+	font-weight: bold;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+
+/* 목록 수정 삭제 버튼*/
+.feedback_container_modDel{
+	background-color: white;
+ 	font-weight: bold;
+ 	margin-bottom: 15px;
+}
+
+/* 동영상 */
+
+.feedback_container_video{
+	border: 3px solid #708090;
+	border-radius: 7px;
+}
+
+/* 내용 */
+.feedback_container_content{
+	background-color: white;
+	font-weight: bold;
+	overflow-x: hidden;
+	width: 950px;
+	height: 580px;
+}
+
+.feedback_container_content img {
+	width: 880px;
+	/*height: 400px;*/
+	object-fit: cover;
+}
+
+
+.feedback_container_answer{
+	background-color: rgba(135, 135, 135, 0.2);
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	margin-top:50px;
+	border: 3px solid #708090;
+	border-radius: 7px;
+	font-weight: bold;
+}
+
+.feedback_container_answer div{
+	margin-left: 10px;
+}
+
+.btn_an_listForm_fixed{
+	background-color: #1fbeff;
+}
+
+
+.an_listForm_table{
+	/* 답글 세로사이즈*/
+	width: 50vw;
+}
+
+.each_answer{
+	/* 답글 세로사이즈*/
+	height:10vh;
+	
+}
+
+.each_answer_content{
+	display: flex;
+	margin-top:24px;
+}
+
+.each_answer button {
+	border: 5px solid skyblue;
+	border-radius: 30px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.answer_submits {
+	border: 3px solid #4169E1;
+	border-radius: 7px;
+	margin-bottom: 10px;
+}
+.answer_write_title {
+	border: 3px solid #4169E1;
+	border-radius: 7px;
+	margin-top: 10px;
+}
+.feedback_container_answer_write_flex textarea {
+	margin: 10px;
+	background-color: white;
+}
+.each_answer_content_inner{
+	width: 7vw;
+	overflow: hidden;
+	height: 3vh;
+	margin: 10px;
+	cursor: pointer;
+	text-overflow: ellipsis;
+}
+
+.each_answer_content:hover{
+ 	color: #4169E1;
+}
+
+.each_answer_content_detail{
+	display: none;
+}
+
+.each_answer_subject{
+	height:5vh;
+	width:10vw;
+	word-break:break-all;
+}
+
+
+/* 내용 누르면 나타나는 상세보기 박스*/
+.each_answer_content_detail_content{
+	border-radius: 7px;
+	border: 3px solid skyblue;
+	background-color: white;
+	height: 20vh;
+	width: 50vw;
+	word-break:break-all;
+	overflow-y: scroll;
+}
+
+.each_answer_content_detail_content_inner{
+	height: 20vh;
+	width: 50vw;
+}
+
+/* 피드백 답변 작성폼 */
+.feedback_container_answer_write{
+	border: 3px solid #4169E1;
+	border-radius: 7px;
+	display: none;
+	margin: 10px;
+}
+.btn_feedback_container_answer_write button {
+	border: 3px solid #4169E1;
+	border-radius: 7px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+
+.feedback_container_answer_write_flex{
+	display: flex;
+	flex-direction: column;
+}
+
+.replyfeedback_container_reply{
+	border: 3px solid #708090;
+	border-radius: 7px;
+	background-color: rgba(135, 135, 135, 0.2);
+	margin-top: 50px;
+}
+
+.re_listForm{
+	background-color: #2b4cda;
+}
+
+.re_listForm_table{
+	/* 댓글 가로사이즈*/
+	width: 51.7vw;
+}
+
+
+.each_reply{
+	/*댓글 세로사이즈*/
+	height: 10vh;
+	background-color: #d9f5fa;
+	border: 2px solid black;
+}
+
+.replyfeedback_container_reply div button {
+	border: 5px solid skyblue;
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+td button {
+	border: 5px solid skyblue;
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+.re_listForm_date{
+	width: 100px;
+}
+ .comment_submits{
+ 	width:100px;	
+    margin-left: 885px;
+ 	border: 5px solid skyblue;
+	border-radius: 30px;
+	font-weight: bold;
+ }
+/* .board_subject_container {
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 40px;
+	width: 980px;
+	height: 55px;
+	color: black;
+	border: 6px solid #708090;
+	border-radius: 30px;
+} */
+
+/*.board_container_bo {*/
+/*	margin-top: 20px;*/
+/*	text-align: center;*/
+/*	font-weight: bold;*/
+/*}*/
+
+/*.board_category_container {*/
+/*	width: 100px;*/
+/*	height: 40px;*/
+/*	!*border: 1px solid black;*!*/
+/*	float: left;*/
+/*}*/
+
+/*.board_date_container {*/
+/*	width: 300px;*/
+/*	height: 40px;*/
+/*	!*border: 1px solid black;*!*/
+/*	float: left;*/
+/*}*/
+
+/*.board_name_container {*/
+/*	width: 100px;*/
+/*	height: 40px;*/
+/*	!*border: 1px solid black;*!*/
+/*	float: left;*/
+/*}*/
+
+/*.board_readcount_container {*/
+/*	width: 100px;*/
+/*	height: 40px;*/
+/*	!*border: 1px solid black;*!*/
+/*	float: right;*/
+/*}*/
+
+/*.board_reply_container {*/
+/*	width: 100px;*/
+/*	height: 40px;*/
+/*	!*border: 1px solid black;*!*/
+/*	float: right;*/
+/*}*/
+
+/*.board_like_container {*/
+/*	width: 100px;*/
+/*	height: 40px;*/
+/*	!*border: 1px solid black;*!*/
+/*	float: right;*/
+/*}*/
+
+/*.board_content_container {*/
+/*	margin-top: 20px;*/
+/*	width: 950px;*/
+/*	height: 380px;*/
+/*	border: 3px solid #708090;*/
+/*	border-radius: 7px;*/
+/*	position: absolute;*/
+/*	left: 50%;*/
+/*	transform: translateX(-50%);*/
+/*	overflow: scroll;*/
+/*	overflow-x: hidden;*/
+/*	font-weight: bold;*/
+/*}*/
+
+/*.board_content_container img {*/
+/*	width: 880px;*/
+/*	!*height: 400px;*!*/
+/*	object-fit: cover;*/
+/*}*/
+
+/*#commandList {*/
+/*	margin-top: 100px;*/
+/*	margin-left: 20px;*/
+/*}*/
+
+/*#commandList button a {*/
+/*	text-decoration: none;*/
+/*	color: black;*/
+/*}*/
+
+
+
+
+.rrrr {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+.like_and_ward {
+	display: flex;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.btn_mok {
+	border: 5px solid skyblue;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0);
+	font-weight: bold;
+	width: 120px;
+	height: 48px;
+	float: left;
+	font-size: 15px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.btn_like {
+	padding: 20px;
+	width: 50px;
+	height: 48px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.btn_ward {
+	padding: 20px;
+	width: 80px;
+	height: 48px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.btn_modify {
+	border: 5px solid skyblue;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0);
+	font-weight: bold;
+	width: 120px;
+	height: 48px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.btn_del {
+	border: 5px solid skyblue;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0);
+	font-weight: bold;
+	width: 120px;
+	height: 48px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+
+
+.reply_container {
+	border: 5px solid #708090;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0);
+	width: 50vw;
+	font-weight: bold;
+	margin-top: 750px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.heart {
+	height: 50px;
+	width: 50px;
+	border-radius: 20px;
+	background: red;
+}
+
+.heart_off {
+	height: 50px;
+	width: 50px;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+
+.bookmark {
+	height: 50px;
+	width: 50px;
+	border-radius: 20px;
+	background: #008293;
+}
+
+.bookmark_off {
+	height: 50px;
+	width: 50px;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+
+/*모달  css*/
+.modal {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.modal_content {
+	width: 400px;
+	height: 200px;
+	background: #fff;
+	border-radius: 10px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -200px;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 74px 0;
+	line-height: 23px;
+	cursor: pointer;
+}
+
+
+
+/* 댓글 작성 박스*/
+.comment_write_content {
+	border: 2px solid #4169E1;
+	background-color: rgba(0, 0, 0, 0);
+	height: 100px;
+	width: 960px;
+	margin-left:10px;
+	margin-top:10px;
+	font-weight: bold;
+}
+
+.answer_write_content {
+	border: 2px solid #4169E1;
+	background-color: rgba(0, 0, 0, 0);
+	height: 100px;
+	width: 800px;
+	font-weight: bold;
+}
+
+
+/* 대댓글 작성창 숨김처리 css */
+.re_comment_write {
+	display: none;
+}
+
+
+.re_heart {
+	width: 10px;
+	height: 10px;
+	background: #ea2027;
+	position: relative;
+	transform: rotate(45deg);
+}
+.re_heart::before,
+.re_heart::after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	border-radius: 50%;
+	background: #ea2027;
+}
+.re_heart::before {
+	left: -50%;
+}
+.re_heart::after {
+	top: -50%;
+}
+
+
+.re_heart_off {
+	width: 10px;
+	height: 10px;
+	background: #afafaf;
+	position: relative;
+	transform: rotate(45deg);
+}
+.re_heart_off::before,
+.re_heart_off::after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	border-radius: 50%;
+	background: #afafaf;
+}
+.re_heart_off::before {
+	left: -50%;
+}
+.re_heart_off::after {
+	top: -50%;
+}
+
+
+
+
+
+
+
+
+/* 댓글 좋아요 기능구현에 필수 css*/
+.rh_off_hide, .rh_hide {
+	display: none;
+}
+
+
+.an_heart {
+	width: 10px;
+	height: 10px;
+	background: #ea2027;
+	position: relative;
+	transform: rotate(45deg);
+}
+.an_heart::before,
+.an_heart::after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	border-radius: 50%;
+	background: #ea2027;
+}
+.an_heart::before {
+	left: -50%;
+}
+.an_heart::after {
+	top: -50%;
+}
+
+
+
+.an_heart_off {
+	width: 10px;
+	height: 10px;
+	background: #afafaf;
+	position: relative;
+	transform: rotate(45deg);
+}
+.an_heart_off::before,
+.an_heart_off::after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	border-radius: 50%;
+	background: #afafaf;
+}
+.an_heart_off::before {
+	left: -50%;
+}
+.an_heart_off::after {
+	top: -50%;
+}
+
+.re_list_font{
+	font-weight: bold;
+}
+
+
+
+/* 댓글 좋아요 기능구현에 필수 css*/
+.ah_off_hide, .ah_hide {
+	display: none;
+}
+
+
+
+
+/*.answer_cont{*/
+/*	margin-top: 20px;*/
+/*	width: 950px;*/
+/*	height: 380px;*/
+/*	border: 3px solid #708090;*/
+/*	border-radius: 7px;*/
+/*	position: absolute;*/
+/*	left: 50%;*/
+/*	transform: translateX(-50%);*/
+/*	overflow: scroll;*/
+/*	overflow-x: hidden;*/
+/*	font-weight: bold;*/
+/*}*/
+
+/*.reply_cont{*/
+/*	margin-top:450px;*/
+/*	width: 950px;*/
+/*	height: 380px;*/
+/*	border: 3px solid #708090;*/
+/*	border-radius: 7px;*/
+/*	position: absolute;*/
+/*	left: 50%;*/
+/*	transform: translateX(-50%);*/
+/*	overflow: scroll;*/
+/*	overflow-x: hidden;*/
+/*	font-weight: bold;*/
+/*}*/
